@@ -1,0 +1,88 @@
+/* HomePage.css */
+
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative; /* Añadido para posicionar correctamente el footer */
+  }
+  
+  .HomePage-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #007bff, #00c6ff); /* Cambiado a un gradiente de azul */
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+  
+  
+  .HomePage-header input[type="search"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+  }
+  
+ .HomePage-header button[type="submit"] {
+    background: linear-gradient(to right, #007bff, #00c6ff, #fff); /* Cambiado a un gradiente de azul a blanco */
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  .container {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 4rem; /* Espacio para el encabezado fijo */
+  }
+  .sidebar {
+    position: fixed;
+    top: 4rem; /* Espacio para el encabezado fijo */
+    left: 0;
+    height: calc(100% - 4rem); /* Altura total menos el espacio del encabezado */
+    width: 200px;
+    background: linear-gradient(to right, #007bff, #fff, #808080); /* Cambiado a un gradiente de azul a blanco a gris */
+    overflow-y: auto;
+    padding: 2rem; /* Aumentado para dar más espacio al contenido del sidebar */
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .context {
+    flex-grow: 1;
+    padding: 1rem;
+    margin-left: 220px; /* Espacio para el menú lateral fijo */
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff; /* Color de texto blanco para mayor contraste */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Añadido para posicionar el footer */
+    bottom: 0; /* Añadido para fijar el footer en la parte inferior */
+    width: 200px; /* Ancho igual al sidebar */
+  }
+  .hidden {
+    display: none;
+  }
+  

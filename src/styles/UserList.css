@@ -1,0 +1,15 @@
+.user-list {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.user-list p {
+    margin: 5px 0;
+}
